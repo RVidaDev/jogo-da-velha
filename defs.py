@@ -1,9 +1,3 @@
-matriz = [
-    ["_", "_", "_"],
-    ["_", "_", "_"],
-    ["_", "_", "_"]
-]
-
 def imprimir_matriz(matriz):
     for linha in matriz:
         print(" | ".join(map(str, linha)))
@@ -68,6 +62,12 @@ def verificar_vitoria(matriz, simbolo):
         return True
 
     return False
+
+matriz = [
+    ["_", "_", "_"],
+    ["_", "_", "_"],
+    ["_", "_", "_"]
+]
 
 matriz_jogador = [
     ["_", "_", "_"],
