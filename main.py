@@ -1,8 +1,3 @@
-print("bem vindo ao jogo da velha")
-
-iniciar_jogo()
-
-escolha_linha = int(input("digite o número da linha"))
-escolha_coluna = int(input("digite o número da coluna"))
-
-fazer_jogada()
+while True:
+    fazer_jogada(matriz, matriz_jogador)
+    jogada_pc(matriz, matriz_jogador)
