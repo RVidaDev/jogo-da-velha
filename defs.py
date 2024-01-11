@@ -24,8 +24,6 @@ def fazer_jogada(matriz, matriz_jogador):
         print("Parabéns! Você ganhou!")
         exit() 
 
-    return imprimir_matriz(matriz)
-
 def jogada_pc(matriz, matriz_jogador):
     import random
 
@@ -41,10 +39,9 @@ def jogada_pc(matriz, matriz_jogador):
             break
         
     if verificar_vitoria(matriz, "O"):
+        imprimir_matriz[matriz]
         print("Seu computador venceu! Seu burro incompetente.")
         exit()
-
-    return imprimir_matriz(matriz)
 
 def verificar_vitoria(matriz, simbolo):
     #linhas
